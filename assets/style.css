@@ -1,0 +1,175 @@
+body {
+    background-color: #f9f9fb;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+
+/*----------------------Left bar-------------------------*/ 
+.img_left-bar{
+    width: 33px;
+}
+  /* Sidebar izquierdo */
+  .sidebar-left {
+    width: 200px;
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    padding: 20px;
+  }
+  
+  .sidebar-left nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .sidebar-left nav a {
+    text-decoration: none;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background 0.2s;
+  }
+  
+  .sidebar-left nav a:hover {
+    background-color: #f0f0f5;
+  }
+  
+  /* Contenido principal */
+  main {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header .date {
+    font-size: 0.9rem;
+    background-color: #eee;
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+  
+  /* Estadísticas */
+  .stats {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .stats .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Buscador */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-bar button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /* Tabla */
+  .table-section {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    padding: 12px 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  table th {
+    color: #888;
+  }
+  
+  /* Sidebar derecho */
+  .sidebar-right {
+    width: 220px;
+    background-color: #ffffff;
+    border-left: 1px solid #e0e0e0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .sidebar-right .profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ccc;
+  }
+  
+  .sidebar-right .user-info {
+    text-align: center;
+  }
+  
+  .sidebar-right .user-info p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .sidebar-right .actions button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .sidebar-right .actions .profile-btn {
+    background-color: #5c27fe;
+    color: #fff;
+  }
+  
+  .sidebar-right .actions .orders-btn {
+    background-color: #eee;
+  }
