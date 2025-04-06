@@ -28,8 +28,8 @@
             <div class="left-container-second-menu">
                 <nav>
                     <ul class="main-menu">
-                        <li><img class="img_left-bar" src="Images/help logo.png" alt=""><a href="">Help and information</a></li>
-                        <li><img class="img_left-bar" src="Images/logout.png" alt=""><a href="">Log out</a></li>
+                        <li><img class="img_left-bar" src="Images/help logo.png" alt=""><a class="bottom-menu" href="">Help and information</a></li>
+                        <li><img class="img_left-bar" src="Images/logout.png" alt=""><a class="bottom-menu" href="">Log out</a></li>
                     </ul>
                 </nav>
             </div>
@@ -56,9 +56,72 @@
                 <div><img src="Images/Home/supplier.svg" alt=""><div class="stats-text"><p>Suppliers</p><span style="color: #19B7C4;">202</span></div></div>
                 <div><img src="Images/Home/empty box.svg" alt=""><div class="stats-text"><p>No stock</p><span style="color: #BF1A1A;">152</span></div></div>
             </section>
-            <section class="table-section"></section>
+            <section class="table-section">
+                <form class="search-container" action="/buscar" method="GET">
+                    <img class="lens" src="images/Home/lupa (1) 1.png" alt="" width="28px">
+                    <input type="search" name="q" placeholder="Search for product ID, brand, categories or key word..." autocomplete="on">
+                    <button type="button" class="filter-btn"><img src="images/Home/filter.png" alt="">Filters</button>
+                </form>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>Name</th>
+                            <th>ID</th>
+                            <th>Category</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Rolex Perpetual</td>
+                            <td>FGHK20</td>
+                            <td>Classic</td>
+                            <td><img src="images/Home/view.png" alt=""></td>
+                            <td><img src="images/Home/delete.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Rolex Perpetual</td>
+                            <td>FGHK20</td>
+                            <td>Classic</td>
+                            <td><img src="images/Home/view.png" alt=""></td>
+                            <td><img src="images/Home/delete.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Rolex Perpetual</td>
+                            <td>FGHK20</td>
+                            <td>Classic</td>
+                            <td><img src="images/Home/view.png" alt=""></td>
+                            <td><img src="images/Home/delete.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Rolex Perpetual</td>
+                            <td>FGHK20</td>
+                            <td>Classic</td>
+                            <td><img src="images/Home/view.png" alt=""></td>
+                            <td><img src="images/Home/delete.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Rolex Perpetual</td>
+                            <td>FGHK20</td>
+                            <td>Classic</td>
+                            <td><img src="images/Home/view.png" alt=""></td>
+                            <td><img src="images/Home/delete.png" alt=""></td>
+                        </tr>
+                    </tbody>
+                </table>               
+            </section>
         </main>
-        <aside class="sidebar-right"></aside>
+        <aside class="sidebar-right">
+            <div class="cover-profile-container">
+                <div>
+                    <span></span>
+                </div>
+            </div>
+            <div></div>
+        </aside>
         </div>
 </body>
 </html>
