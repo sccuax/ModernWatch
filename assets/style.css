@@ -1,4 +1,5 @@
 /*--------------fonts----------------*/
+/*Headings*/
 @font-face {
     font-family: 'Proxima Nova';
     src: url('../fonts/ProximaNova/ProximaNova-BlackItalic.woff2') format('woff2');
@@ -12,10 +13,44 @@
     font-weight: 900;
     font-style: normal;
   }
+  /*Text*/
+  /* Light */
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham/Gotham-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
 
-a, p{
+/* Book */
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham/Gotham-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham/Gotham-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham/Gotham-Ultra.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+a, p, span{
     color: var(--text-color);
     text-decoration: none;
+    font-family: "Gotham";
+    margin: 0;
 }
 
 
@@ -24,6 +59,7 @@ h1, h2, h3, h4, h5, h6{
     font-family: "Proxima Nova";
     font-style: normal;
     font-weight: 900;
+    margin: 0;
 }
 h1{
   font-size: var(--medium-heading);
@@ -32,12 +68,18 @@ h1{
 :root{
   /*body*/
     --primary-color: #F8FAFC;
+    ---borders-color: #AEAEAE;
   /*text variables*/
     --text-color: #333333;
     --small-text: 14px;
     --medium-text: 16px;
     --large-text: 18px;
     --big-text: 20px;
+    --book-weight: 400;
+    --light-weight: 300;
+    --medium-weight: 500;
+    --ultra-weght: 900;
+    --white-text: #E6EDF7;
     /*Heading variables*/
     --heading-color: #353535;
     --small-heading: 24px;
@@ -99,6 +141,11 @@ body {
     gap: 20px;
   }
   
+.main-menu li a{
+  font-size: 20px;
+  font-weight: 400;
+}
+
   .left-container-logo{
     display: flex;
     flex-direction: row;
@@ -116,18 +163,9 @@ body {
     margin-bottom: 50px;
   }
   
-  .sidebar-left nav a {
-    text-decoration: none;
-    color: #444;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    transition: background 0.2s;
-  }
   
-  .sidebar-left nav a:hover {
+  
+  .sidebar-left nav li:hover {
     background-color: #f0f0f5;
   }
   
@@ -135,7 +173,7 @@ body {
   main {
     width: 65%;
     flex: 1;
-    padding: 30px;
+    padding: 30px 50px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -144,63 +182,106 @@ body {
   /* Header */
   .header {
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
+    margin-top: 26px;
+    padding: 0 0 54px;
+    border-bottom: 0.5px solid var(---borders-color);
   }
   
-  .header .date {
-    font-size: 0.9rem;
-    background-color: #eee;
-    padding: 5px 10px;
-    border-radius: 8px;
+.wellcome-home-container{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+  .date-notifications-container{
+    display: inline-flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    gap: 20px;
+  }
+
+  .notifications-button{
+    background-color: var(--primary-color);
+    position: relative;
+    border: 0.3px solid var(---borders-color);
+    padding: 4px 24px;
+    border-radius: 2.5px 6.5px;
+    height: 43px;
+  }
+
+  .button-budge{
+    font-family: "Gotham";
+    font-weight: var(--medium-weight);
+    color: var(--white-text);
+    font-size: 14px;
+    padding: 4px 8px;
+    position: absolute;
+    right: calc(100% - 10px);
+    bottom: 30px;
+    border-radius: 50%;
+    background-color: #B15364;
   }
   
+.calendar{
+  display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 8px;
+    border: 0.3px solid var(---borders-color);
+    border-radius: 2.5px 6.5px;
+}
+
+.calendar p{
+  font-family: "Gotham";
+  font-size: var(--small-text);
+  font-weight: var(--medium-weight);
+}
+
   /* Estadísticas */
   .stats {
     display: flex;
-    gap: 30px;
-  }
-  
-  .stats .card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.05);
-    flex: 1;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
+    gap: 20px;
   }
-  
-  /* Buscador */
-  .search-bar {
+
+  .stats div{
+    width: 33.3%;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
   }
-  
-  .search-bar input {
-    flex: 1;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
+
+  .stats div .stats-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
   }
-  
-  .search-bar button {
-    padding: 10px 15px;
-    border: none;
-    background-color: #444;
-    color: #fff;
-    border-radius: 10px;
-    cursor: pointer;
+
+  .stats div img{
+    width: 92px;
   }
+.stats p{
+  font-size: var(--big-text);
+  font-weight: var(--medium-weight);
+}
+
+.stats span{
+  font-size: var(--big-text);
+  font-weight: var(--ultra-weght);
+}
   
-  /* Tabla */
+ 
+  /*--------------- Tabla ---------------*/
   .table-section {
-    background-color: #fff;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    padding-top: 54px;
+    border-top: 0.5px solid var(---borders-color);
   }
   
   table {
