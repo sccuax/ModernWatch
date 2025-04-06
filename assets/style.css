@@ -25,14 +25,27 @@ h1, h2, h3, h4, h5, h6{
     font-style: normal;
     font-weight: 900;
 }
+h1{
+  font-size: var(--medium-heading);
+}
 /*----------------variables----------------*/
 :root{
-    --heading-color: #353535;
+  /*body*/
+    --primary-color: #F8FAFC;
+  /*text variables*/
     --text-color: #333333;
+    --small-text: 14px;
+    --medium-text: 16px;
+    --large-text: 18px;
+    --big-text: 20px;
+    /*Heading variables*/
+    --heading-color: #353535;
+    --small-heading: 24px;
+    --medium-heading: 34px;
 }
 
 body {
-    background-color: #f9f9fb;
+    background-color: var(--primary-color);
     color: #333;
   }
   
@@ -43,22 +56,64 @@ body {
   }
 
 
-/*----------------------Left bar-------------------------*/ 
-.img_left-bar{
-    width: 33px;
-}
+/*----------------------Left bar-------------------------*/
+
   /* Sidebar izquierdo */
   .sidebar-left {
-    width: 200px;
-    background-color: #ffffff;
-    border-right: 1px solid #e0e0e0;
-    padding: 20px;
-  }
-  
-  .sidebar-left nav {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    width: 20%;
+    background-color: var(--primary-color);
+    border-right: 1px solid #e0e0e0;
+    padding: 0 20px 0 28px;
+    gap: 80px;
+  }
+
+  .main-logo{
+    width: 56px;
+  }
+  .logo_text{
+      color: var(--heading-color);
+      font-size: var(--small-heading);
+      font-family: "Proxima Nova";
+      font-style: italic;
+      font-weight: 900;
+  }
+
+  .img_left-bar{
+      width: 33px;
+  }
+
+  .main-menu {
+    display: grid;
+    list-style-type: none;
+    gap: 24px;
+    padding: 0 0 0 10px; 
+    margin: 0;  
+  }
+
+  nav .main-menu li{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .left-container-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-top: 50px;
+    gap: 8px;
+  }
+
+  .left-container-main-menu{
+    height: 100%;
+  }
+
+  .left-container-second-menu{
+    margin-bottom: 50px;
   }
   
   .sidebar-left nav a {
@@ -78,6 +133,7 @@ body {
   
   /* Contenido principal */
   main {
+    width: 65%;
     flex: 1;
     padding: 30px;
     display: flex;
@@ -164,8 +220,8 @@ body {
   
   /* Sidebar derecho */
   .sidebar-right {
-    width: 220px;
-    background-color: #ffffff;
+    width: 15%;
+    background-color: var(--primary-color);
     border-left: 1px solid #e0e0e0;
     padding: 20px;
     display: flex;
