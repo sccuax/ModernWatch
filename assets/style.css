@@ -47,7 +47,7 @@
 }
 
 
-a, p, span{
+a, p, span, button{
     color: var(--text-color);
     text-decoration: none;
     font-family: "Gotham";
@@ -95,7 +95,7 @@ body {
   
   .container {
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
   }
 
@@ -295,7 +295,6 @@ body {
   margin: 0;
   border-radius: 2.5px;
   gap: 32px;
-  overflow: hidden;
   background-color: #ffff;
 }
 
@@ -348,6 +347,7 @@ body {
     flex-direction: column;
     gap: 28px;
     padding-top: 54px;
+    overflow-y: auto;
     border-top: 0.5px solid var(---borders-color);
   }
   
@@ -407,7 +407,6 @@ body {
     width: 20%;
     background-color: var(--primary-color);
     border-left: 1px solid #e0e0e0;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -416,36 +415,54 @@ body {
 
   /*cover picture*/
 
+.cover-profile-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 64px 0 40px 0;
+  width: 100%;
+  border-bottom: 0.5px solid var(---borders-color);
+}
 
-  .sidebar-right .profile-pic {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: #ccc;
-  }
-  
-  .sidebar-right .user-info {
-    text-align: center;
-  }
-  
-  .sidebar-right .user-info p {
-    margin-top: 5px;
-    font-size: 0.9rem;
-  }
-  
-  .sidebar-right .actions button {
-    margin-top: 10px;
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
-  .sidebar-right .actions .profile-btn {
-    background-color: #5c27fe;
-    color: #fff;
-  }
-  
-  .sidebar-right .actions .orders-btn {
-    background-color: #eee;
-  }
+.cover-picture{
+  width: 200px;
+}
+
+.cover-profile-container button{
+  background-color: #ffff;
+  position: absolute;
+  border: 0.5px solid var(---borders-color);
+  top: 68px;
+  left: calc(100% - 80px);
+}
+
+.profile-picture_container{
+  position: absolute;
+  top: 70%;
+}
+
+.profile-picture{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 64px;
+  border-radius: 50%;
+  background-color: #D1D9DC;
+}
+
+.profile-picture img{
+  width: 40px;
+}
+
+.profile-picture span img{
+  width: 12px;
+}
+
+.profile-picture span{
+  position: absolute;
+  border-radius: 50%;
+  border: 0.3px solid var(---borders-color);
+  padding: 8px;
+}
