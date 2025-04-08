@@ -181,7 +181,7 @@ body {
     padding: 30px 50px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
   }
   
   /* Header */
@@ -410,7 +410,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 126px;
   }
 
   /*cover picture*/
@@ -436,7 +436,7 @@ body {
   top: 68px;
   left: calc(100% - 80px);
 }
-
+/*profile picture*/
 .profile-picture_container{
   position: absolute;
   top: 70%;
@@ -465,4 +465,49 @@ body {
   border-radius: 50%;
   border: 0.3px solid var(---borders-color);
   padding: 8px;
+  left: calc(100% - 12px);
+  top: calc(100% - 34px);
 }
+
+/*name and status profile*/
+.profile-info-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.name-status{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.name-status h5{
+  font-family: "Proxima Nova";
+  font-size: var(--medium-text);
+  font-weight: 900;
+}
+
+.name-status h5 span{
+  font-family: "Ghotam";
+  font-size: var(--small-text);
+  font-weight: var(--light-weight);
+}
+
+.status-profile{
+  background-color: #42B519;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.name-email-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 8px;
+}
+
