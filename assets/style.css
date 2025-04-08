@@ -595,6 +595,7 @@ body {
 .form-container{
   border-radius: 26.5px;
   border: 0.5px solid var(---borders-color);
+  padding-bottom: 60px;
 }
 /*block1*/
 .block1{
@@ -636,6 +637,7 @@ body {
   border-radius: 4.9px;
   width: 39px;
   background-color: #71B253;
+  margin-top: 79px;
 }
 
 .send-button img{
@@ -649,7 +651,298 @@ body {
 }
 
 .form-information-to-fill .input-form:nth-child(2){
-  width: 75%;
+  width: 65%;
   margin-top: 32px;
+  margin-right: 20px;
 }
 
+.form-information-to-fill .input-form:nth-child(3){
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin-top: 72px;
+}
+
+.form-information-to-fill .input-form:nth-child(4){
+  width: 40%;
+  margin-top: 32px;
+  margin-right: 20px;
+}
+
+.form-information-to-fill .input-form:nth-child(5){
+  width: 40%;
+  margin-top: 32px;
+  margin-right: 20px;
+}
+
+.date-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.date-icon {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.hidden-date-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+
+
+/*---------------------login---------------------------*/
+
+
+.login-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 5px solid;
+  border-color: transparent;
+}
+
+.login-inputs .img {
+  position: absolute;
+  width: 1580px;
+  height: 844px;
+  top: 10px;
+  left: 0;
+  object-fit: cover;
+}
+
+.login-inputs .log-in-form-and-sign {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  padding: 40px 4px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  background-color: #f8fafc;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 1.5px solid;
+  border-color: #258cad;
+}
+
+.login-inputs .login-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.login-inputs .div {
+  display: flex;
+  width: 496px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.login-inputs .text-wrapper {
+  position: relative;
+  width: fit-content;
+  font-family: "Roboto-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #353434;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 1.50px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.login-inputs .logo {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.login-inputs .user {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+  padding: 0px 39px;
+  position: relative;
+  align-self: stretch;
+  flex: 0 0 auto;
+}
+
+.login-inputs .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Roboto-Bold", Helvetica;
+  font-weight: 700;
+  color: #2e2e2e;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 1.20px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.login-inputs .group {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 70px;
+  margin-right: -2.00px;
+}
+
+.login-inputs .overlap-group {
+  position: relative;
+  width: 496px;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 0.5px solid;
+  border-color: #aeaeae;
+}
+
+.login-inputs .text-wrapper-3 {
+  height: 31px;
+  top: 23px;
+  left: 27px;
+  position: absolute;
+  font-family: "Candara-Regular", Helvetica;
+  font-weight: 400;
+  color: #a8a8a9;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1.00px;
+  line-height: normal;
+}
+
+.login-inputs .password {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 17px;
+  padding: 0px 39px;
+  position: relative;
+  align-self: stretch;
+  flex: 0 0 auto;
+}
+
+.login-inputs .text-wrapper-4 {
+  width: 206px;
+  height: 23px;
+  top: 22px;
+  left: 26px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Candara-Regular", Helvetica;
+  font-weight: 400;
+  color: #a8a8a9;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1.00px;
+  line-height: normal;
+}
+
+.login-inputs .frame {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  align-self: stretch;
+  width: 100%;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.login-inputs .text-wrapper-5 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  text-shadow: 4px -4px 4px #00000017;
+  background: linear-gradient(
+    231deg,
+    rgba(127, 117, 193, 1) 0%,
+    rgba(143, 135, 201, 1) 88%
+  );
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  font-family: "Candara-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1.00px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.login-inputs .div-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 136.5px;
+  border-radius: 50px;
+  background: linear-gradient(
+    90deg,
+    rgba(38, 33, 71, 1) 15%,
+    rgba(95, 83, 178, 1) 50%,
+    rgba(38, 33, 71, 1) 85%
+  );
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.login-inputs .text-wrapper-6 {
+  position: relative;
+  width: 65px;
+  margin-top: -1.00px;
+  font-family: "Candara-Regular", Helvetica;
+  font-weight: 400;
+  color: #fefeff;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.60px;
+  line-height: 0.1px;
+}
+
+.login-inputs .frame-2 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  align-self: stretch;
+  width: 100%;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame-2 a{
+  background: linear-gradient(231deg, rgba(127, 117, 193, 1) 0%, rgba(143, 135, 201, 1) 88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

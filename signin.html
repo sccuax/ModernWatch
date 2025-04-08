@@ -73,7 +73,10 @@
                             </div>
                             <div class="input-form">
                                 <label for="date">Birth date</label>
-                                <input type="date" id="date" name="date">
+                                <div class="date-wrapper">
+                                    <img src="Images/signin/calendar.svg" alt="Seleccionar fecha" class="date-icon" onclick="document.getElementById('date').click()">
+                                    <input type="date" id="date" name="date" class="hidden-date-input">
+                                </div>
                             </div>
                             <div class="input-form">
                                 <label for="ID">ID</label>
