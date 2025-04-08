@@ -65,11 +65,30 @@ h1, h2, h3, h4, h5, h6{
 h1{
   font-size: var(--medium-heading);
 }
+
+label{
+  font-family: "Gotham";
+  font-weight: var(--book-weight);
+  font-size: var(--big-text);
+  color: var(--text-color);
+}
+
+input{
+  font-family: "Gotham";
+  font-weight: var(--light-weight);
+  font-size: var(--medium-text);
+  color: #A8A8A9;
+  text-align: center;
+  height: 39px;
+  border: 0.5px solid var(---borders-color);
+  border-radius: 2.9px;
+}
 /*----------------variables----------------*/
 :root{
   /*body*/
     --primary-color: #F8FAFC;
     --secondary-color: #F5F7F9;
+    --third-color: #5F53B2;
     ---borders-color: #AEAEAE;
   /*text variables*/
     --text-color: #333333;
@@ -474,6 +493,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  gap: 48px;
 }
 
 .name-status{
@@ -509,5 +529,127 @@ body {
   text-align: center;
   justify-content: center;
   gap: 8px;
+}
+
+.button-prifile-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  height: auto;
+}
+
+.btn-main{
+  font-size: var(--medium-text);
+  font-weight: var(--light-weight);
+  padding: 16px 20px;
+  border-radius: 2.3px;
+  border: 0.5px solid var(---borders-color);
+  background-color: #ffff;
+}
+
+.button-prifile-container .btn-main:nth-child(2){
+  background-color: var(--third-color);
+  color: #D1D9DC;
+}
+
+
+/*-----------------------------------------SIGN IN--------------------------------------------*/
+
+/*header main*/
+
+.header-bottom-margin{
+  padding-bottom: 100px;
+}
+
+/*---form sign up----*/
+.info-form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*header*/
+.hearder-form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hearder-form button{
+  color: #F8F8FF;
+  background-color: #B25364;
+}
+
+.text-sign-up{
+  font-weight: var(--book-weight);
+  font-size: var(--large-text);
+}
+
+/*------------form--------*/
+.info-form{
+  overflow-y: auto;
+}
+.form-container{
+  border-radius: 26.5px;
+  border: 0.5px solid var(---borders-color);
+}
+/*block1*/
+.block1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  padding: 24px 54px;
+  border-bottom: 0.5px solid var(---borders-color);
+}
+
+.block1 p{
+  font-weight: var(--medium-weight);
+  font-size: var(--big-text);
+}
+
+.form-information-to-fill{
+  padding: 0 54px;
+}
+
+.form-information-to-fill form{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-form{
+  display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+
+.send-button{
+  position: relative;
+  height: 39px;
+  border: none;
+  border-radius: 4.9px;
+  width: 39px;
+  background-color: #71B253;
+}
+
+.send-button img{
+  position: absolute;
+  top: 10px;
+  right: 20%;
+}
+
+.form-information-to-fill .input-form:nth-child(1){
+  width: 100%;
+}
+
+.form-information-to-fill .input-form:nth-child(2){
+  width: 75%;
+  margin-top: 32px;
 }
 
